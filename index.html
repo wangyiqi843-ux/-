@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歩み AYUMI LAB | 亞洲寬楦減壓鞋履 — 微型創業企劃與線上意向驗證</title>
+  <!-- Google Fonts: Noto Sans TC, Noto Serif JP, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       CSS 自定義主題變數 (可動態切換 4 種日系風格)
+       ========================================================================== */
+    :root, [data-theme="cream"] {
+      --bg-primary: #fbf9f5;
+      --bg-secondary: #f4efe6;
+      --bg-card: #ffffff;
+      --bg-card-hover: #fdfbf7;
+      --text-main: #2b2622;
+      --text-muted: #6e675f;
+      --text-light: #9a9289;
+      --border-color: #e5ded3;
+      --border-accent: #c4b5a0;
+      --accent: #925338;
+      --accent-hover: #7b432c;
+      --accent-soft: #f1e6df;
+      --tag-bg: #ece5dc;
+      --tag-text: #594d42;
+      --shadow-sm: 0 2px 8px rgba(43, 38, 34, 0.04);
+      --shadow-md: 0 8px 24px rgba(43, 38, 34, 0.08);
+      --shadow-lg: 0 16px 36px rgba(43, 38, 34, 0.12);
+      --badge-academic: #5c6b57;
+      --badge-academic-bg: #edf2eb;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #121212;
+      --bg-secondary: #1a1a1a;
+      --bg-card: #222222;
+      --bg-card-hover: #282828;
+      --text-main: #f0f0f0;
+      --text-muted: #a6a6a6;
+      --text-light: #707070;
+      --border-color: #333333;
+      --border-accent: #555555;
+      --accent: #d89f68;
+      --accent-hover: #e5b182;
+      --accent-soft: #382c21;
+      --tag-bg: #2a2a2a;
+      --tag-text: #dfdfdf;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+      --shadow-lg: 0 16px 36px rgba(0, 0, 0, 0.6);
+      --badge-academic: #a3b899;
+      --badge-academic-bg: #1c2619;
+    }
+
+    [data-theme="matcha"] {
+      --bg-primary: #f6f8f5;
+      --bg-secondary: #ebf0e9;
+      --bg-card: #ffffff;
+      --bg-card-hover: #fcfdfb;
+      --text-main: #202c1f;
+      --text-muted: #566755;
+      --text-light: #899c88;
+      --border-color: #dce4da;
+      --border-accent: #a9bea6;
+      --accent: #496947;
+      --accent-hover: #375235;
+      --accent-soft: #e3ece1;
+      --tag-bg: #e2ebe0;
+      --tag-text: #374f35;
+      --shadow-sm: 0 2px 8px rgba(32, 44, 31, 0.05);
+      --shadow-md: 0 8px 24px rgba(32, 44, 31, 0.08);
+      --shadow-lg: 0 16px 36px rgba(32, 44, 31, 0.12);
+      --badge-academic: #3c5e3a;
+      --badge-academic-bg: #dfeade;
+    }
+
+    [data-theme="indigo"] {
+      --bg-primary: #f5f7fa;
+      --bg-secondary: #e9eef5;
+      --bg-card: #ffffff;
+      --bg-card-hover: #fafbfc;
+      --text-main: #1e293b;
+      --text-muted: #52647d;
+      --text-light: #8596ac;
+      --border-color: #d8e2ee;
+      --border-accent: #a5bdd8;
+      --accent: #2e5984;
+      --accent-hover: #204163;
+      --accent-soft: #e2ecf7;
+      --tag-bg: #dfe8f3;
+      --tag-text: #213d5b;
+      --shadow-sm: 0 2px 8px rgba(30, 41, 59, 0.04);
+      --shadow-md: 0 8px 24px rgba(30, 41, 59, 0.08);
+      --shadow-lg: 0 16px 36px rgba(30, 41, 59, 0.12);
+      --badge-academic: #2b5580;
+      --badge-academic-bg: #dbe7f5;
+    }
+
+    /* ==========================================================================
+       基礎排版與重設
+       ========================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.7;
+      transition: background-color 0.35s ease, color 0.35s ease;
+      font-size: 15px;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .brand-font {
+      font-family: 'Noto Serif JP', 'Noto Sans TC', serif;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ==========================================================================
+       頂部公告欄與導覽列 (Navbar)
+       ========================================================================== */
+    .top-banner {
+      background-color: var(--text-main);
+      color: var(--bg-primary);
+      font-size: 13px;
+      padding: 8px 16px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+    .top-banner span {
+      opacity: 0.88;
+    }
+    .top-banner strong {
+      color: #dfb288;
+      margin: 0 4px;
+    }
+
+    header.navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-primary);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .brand-logo .logo-jp {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .brand-logo .logo-en {
+      font-size: 13px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      font-size: 14px;
+      color: var(--text-muted);
+      transition: color 0.2s;
+      font-weight: 500;
+    }
+
+    .nav-menu a:hover {
+      color: var(--accent);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* 風格切換器控制元件 */
+    .theme-selector-wrap {
+      display: flex;
+      align-items: center;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 30px;
+      padding: 4px;
+    }
+
+    .theme-btn {
+      border: none;
+      background: transparent;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .theme-btn.active {
+      background: var(--bg-card);
+      color: var(--text-main);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      font-weight: 600;
+    }
+
+    .btn-cta-nav {
+      background: var(--accent);
+      color: #ffffff !important;
+      padding: 9px 20px;
+      border-radius: 24px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px rgba(146, 83, 56, 0.25);
+    }
+
+    .btn-cta-nav:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       Hero 形象看板
+       ========================================================================== */
+    .hero {
+      padding: 70px 0 60px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-academic-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--badge-academic-bg);
+      color: var(--badge-academic);
+      border-radius: 20px;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+      border: 1px solid rgba(92, 107, 87, 0.2);
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.35;
+      margin-bottom: 20px;
+      color: var(--text-main);
+    }
+
+    .hero h1 span.highlight {
+      color: var(--accent);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-lead {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      line-height: 1.85;
+      max-width: 580px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--accent);
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 6px 20px rgba(146, 83, 56, 0.3);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(146, 83, 56, 0.4);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-card);
+      color: var(--text-main);
+      padding: 13px 26px;
+      border-radius: 30px;
+      font-size: 14.5px;
+      font-weight: 500;
+      border: 1px solid var(--border-color);
+      transition: all 0.25s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .metric-item .val {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--accent);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .metric-item .lbl {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card-img {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+    }
+
+    .hero-card-img img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-card-img:hover img {
+      transform: scale(1.03);
+    }
+
+    .floating-craft-badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid #e0d7cd;
+      border-radius: 14px;
+      padding: 14px 20px;
+      box-shadow: var(--shadow-md);
+      color: #2b2622;
+    }
+
+    .floating-craft-badge .title {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .floating-craft-badge .sub {
+      font-size: 11.5px;
+      color: #6e675f;
+      margin-top: 2px;
+    }
+
+    /* ==========================================================================
+       企劃背景與課程指引簡報卡 (Academic Banner)
+       ========================================================================== */
+    .section-academic-intro {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 32px 0;
+    }
+
+    .academic-info-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .academic-meta-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 13.5px;
+    }
+
+    .meta-tag-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .meta-tag-item strong {
+      color: var(--accent);
+    }
+
+    .repo-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ==========================================================================
+       品牌故事 (Brand Story)
+       ========================================================================== */
+    .story-section {
+      padding: 90px 0;
+    }
+
+    .story-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 56px;
+    }
+
+    .section-subtitle-en {
+      font-size: 12px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      font-weight: 600;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .story-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 36px 30px;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .story-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--border-accent);
+    }
+
+    .story-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    .story-card h3 {
+      font-size: 19px;
+      margin-bottom: 14px;
+      color: var(--text-main);
+    }
+
+    .story-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.8;
+    }
+
+    /* ==========================================================================
+       核心學理分析專區 (步驟 1 至 步驟 6 完整實踐)
+       ========================================================================== */
+    .academic-section {
+      padding: 90px 0;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .step-tabs-nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .step-tab-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 10px 18px;
+      border-radius: 24px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .step-tab-btn .step-num {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--border-color);
+      color: var(--text-main);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .step-tab-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(146, 83, 56, 0.25);
+    }
+
+    .step-tab-btn.active .step-num {
+      background: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    .step-content-pane {
+      display: none;
+      animation: fadeIn 0.35s ease;
+    }
+
+    .step-content-pane.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .step-card-main {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .step-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .step-card-title h3 {
+      font-size: 24px;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .step-card-title p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .step-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    /* 步驟 1 痛點卡片 */
+    .pain-points-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 20px;
+    }
+
+    .pain-card {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+      position: relative;
+    }
+
+    .pain-card .idx {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--accent);
+      opacity: 0.4;
+      margin-bottom: 8px;
+    }
+
+    .pain-card h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: var(--text-main);
+    }
+
+    .pain-card p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* 步驟 2 PESTC 網格 */
+    .pestc-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .pestc-col {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+    }
+
+    .pestc-letter {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .pestc-col h4 {
+      font-size: 14.5px;
+      margin-bottom: 8px;
+    }
+
+    .pestc-col p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* 步驟 3 內部資源與防護 */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .resource-box {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .resource-box h4 {
+      font-size: 16px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .resource-box ul {
+      list-style: none;
+    }
+
+    .resource-box li {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .resource-box li::before {
+      content: "•";
+      position: absolute;
+      left: 6px;
+      color: var(--accent);
+      font-size: 16px;
+    }
+
+    /* 步驟 4 SWOT 四部曲矩陣 */
+    .swot-matrix {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .swot-cell {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+      position: relative;
+    }
+
+    .swot-cell.so { border-left: 4px solid #2e7d32; }
+    .swot-cell.wo { border-left: 4px solid #0288d1; }
+    .swot-cell.st { border-left: 4px solid #ed6c02; }
+    .swot-cell.wt { border-left: 4px solid #d32f2f; }
+
+    .swot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 12px;
+    }
+
+    .swot-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .swot-type {
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .so .swot-type { background: #e8f5e9; color: #2e7d32; }
+    .wo .swot-type { background: #e1f5fe; color: #0288d1; }
+    .st .swot-type { background: #fff3e0; color: #ed6c02; }
+    .wt .swot-type { background: #ffebee; color: #d32f2f; }
+
+    .swot-cell p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* 步驟 5 SMART 與 三超思維 */
+    .smart-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+    }
+
+    .smart-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .smart-item {
+      display: flex;
+      gap: 16px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 14px 18px;
+      align-items: center;
+    }
+
+    .smart-letter {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    .smart-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .smart-desc strong {
+      color: var(--text-main);
+    }
+
+    .sanchao-card {
+      background: var(--accent-soft);
+      border: 1px solid var(--border-accent);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .sanchao-card h4 {
+      font-size: 16px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .sanchao-item {
+      margin-bottom: 16px;
+    }
+
+    .sanchao-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .sanchao-item .s-name {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .sanchao-item .s-txt {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* 步驟 6 STP 與 4P 方案 */
+    .marketing-mix-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .mix-box {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .mix-box h4 {
+      font-size: 16px;
+      margin-bottom: 14px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mix-box p, .mix-box li {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .mix-box ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    /* ==========================================================================
+       三款商品卡片專區 (Products Section)
+       ========================================================================== */
+    .products-section {
+      padding: 90px 0;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .product-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: all 0.35s ease;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--border-accent);
+    }
+
+    .product-thumb {
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-secondary);
+      height: 280px;
+    }
+
+    .product-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .product-card:hover .product-thumb img {
+      transform: scale(1.06);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(4px);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      letter-spacing: 0.04em;
+    }
+
+    .product-body {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .ptag {
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      font-size: 11px;
+      padding: 3px 9px;
+      border-radius: 12px;
+      font-weight: 500;
+    }
+
+    .product-title {
+      font-size: 19px;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .product-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .product-specs {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .product-specs div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .product-specs div:last-child {
+      margin-bottom: 0;
+    }
+
+    .product-specs .s-val {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .product-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 18px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .price-wrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .price-wrap .price-label {
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    .price-wrap .price-amt {
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--accent);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .btn-preorder-card {
+      background: var(--text-main);
+      color: var(--bg-primary);
+      border: none;
+      padding: 9px 18px;
+      border-radius: 20px;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: inherit;
+    }
+
+    .btn-preorder-card:hover {
+      background: var(--accent);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    /* 優惠套組宣傳橫幅 */
+    .bundle-banner {
+      margin-top: 48px;
+      background: linear-gradient(135deg, var(--accent-soft) 0%, var(--bg-card) 100%);
+      border: 1px solid var(--border-accent);
+      border-radius: 18px;
+      padding: 28px 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .bundle-info h4 {
+      font-size: 18px;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .bundle-info p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       預購意向登記表單區塊 (Pre-order Intention Form)
+       ========================================================================== */
+    .preorder-section {
+      padding: 90px 0;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .preorder-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 48px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .form-header h2 {
+      font-size: 28px;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+
+    .form-header p {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .progress-bar-wrap {
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 30px;
+      padding: 14px 20px;
+      margin-bottom: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .progress-info {
+      font-size: 13.5px;
+      color: var(--text-main);
+    }
+
+    .progress-info strong {
+      color: var(--accent);
+      font-size: 16px;
+    }
+
+    .progress-bar-outer {
+      flex: 1;
+      min-width: 200px;
+      height: 10px;
+      background: var(--border-color);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress-bar-inner {
+      height: 100%;
+      background: var(--accent);
+      border-radius: 5px;
+      width: 76%;
+      transition: width 0.5s ease;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group.full-width {
+      grid-column: span 2;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .form-group label .req {
+      color: #d32f2f;
+      margin-left: 2px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      background: var(--bg-primary);
+      color: var(--text-main);
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+      font-family: inherit;
+    }
+
+    .form-control:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+
+    .shoes-radio-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .shoes-radio-card {
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 12px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.2s;
+      background: var(--bg-primary);
+    }
+
+    .shoes-radio-card:hover {
+      border-color: var(--accent);
+    }
+
+    .shoes-radio-card input {
+      display: none;
+    }
+
+    .shoes-radio-card.selected {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .shoes-radio-card .r-title {
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .shoes-radio-card .r-price {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 6px 20px rgba(146, 83, 56, 0.3);
+      font-family: inherit;
+      margin-top: 10px;
+    }
+
+    .form-submit-btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .form-guarantee {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 16px;
+    }
+
+    /* 成功彈窗回饋 */
+    .success-toast {
+      display: none;
+      background: #edf7ed;
+      color: #1e4620;
+      border: 1px solid #b7dfb9;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-top: 24px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       GitHub Pages 部署與期中成果交付指引專區
+       ========================================================================== */
+    .deployment-guide-section {
+      padding: 80px 0;
+      background: var(--bg-primary);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .deploy-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 36px 40px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .deploy-steps-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 28px;
+    }
+
+    .d-step {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .d-step-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .d-step h4 {
+      font-size: 14.5px;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+
+    .d-step p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       頁尾 (Footer)
+       ========================================================================== */
+    footer.site-footer {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      padding: 60px 0 36px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand h4 {
+      font-size: 22px;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .footer-col h5 {
+      font-size: 14.5px;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 12.5px;
+      color: var(--text-light);
+    }
+
+    /* 響應式微調 (Responsive) */
+    @media (max-width: 992px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-card-img img { height: 380px; }
+      .story-grid, .products-grid { grid-template-columns: 1fr; }
+      .pestc-grid { grid-template-columns: 1fr 1fr; }
+      .swot-matrix { grid-template-columns: 1fr; }
+      .smart-grid { grid-template-columns: 1fr; }
+      .deploy-steps-list { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu { display: none; }
+      .pain-points-grid, .resource-grid, .marketing-mix-grid, .form-grid { grid-template-columns: 1fr; }
+      .form-group.full-width { grid-column: span 1; }
+      .shoes-radio-group { grid-template-columns: 1fr; }
+      .deploy-steps-list { grid-template-columns: 1fr; }
+      .preorder-wrap { padding: 28px 20px; }
+      .hero h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 頂部學術期中專案公告條 -->
+  <div class="top-banner">
+    <span>萬能科技大學《創意發想與實踐》期中專案成果展示 ｜ 授課教師：<strong>邱俊維 博士</strong> ｜ 100% 個人獨立微型創業 MVP</span>
+  </div>
+
+  <!-- 頂部導覽列 -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand-logo">
+        <span class="logo-jp">歩み</span>
+        <span class="logo-en">AYUMI LAB</span>
+      </div>
+
+      <ul class="nav-menu">
+        <li><a href="#brand-story">品牌故事</a></li>
+        <li><a href="#academic-theory">學理分析(步驟1-6)</a></li>
+        <li><a href="#products">明星鞋履</a></li>
+        <li><a href="#preorder">預購意向</a></li>
+        <li><a href="#deployment">部署指引</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- 日系極簡 4 種風格動態切換器 -->
+        <div class="theme-selector-wrap" title="點擊切換日系視覺風格">
+          <button class="theme-btn active" onclick="setTheme('cream')">侘寂白</button>
+          <button class="theme-btn" onclick="setTheme('dark')">墨黑</button>
+          <button class="theme-btn" onclick="setTheme('matcha')">抹茶</button>
+          <button class="theme-btn" onclick="setTheme('indigo')">藍染</button>
+        </div>
+
+        <a href="#preorder" class="btn-cta-nav">預購登記</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero 形象主視覺 -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-academic-tag">
+            <span>🎓 期中企劃實踐 · 步驟 1-6 整合成果</span>
+          </div>
+          <h1>
+            為亞洲腳型量身打造<br>
+            <span class="highlight">赤足般輕盈</span>的減壓漫步哲學
+          </h1>
+          <p class="hero-lead">
+            傳統鞋履常因歐美窄版型導致擠腳、外翻，實體門市高昂租金更讓售價虛高。《歩み AYUMI LAB》以「亞洲加寬人體工學、日系純粹美學、常溫平價超取」為核心，打造讓每一步都自在舒緩的微型鞋履選品。
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#preorder" class="btn-primary">
+              <span>參與預購意向登記</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#academic-theory" class="btn-secondary">
+              <span>檢視 6 步驟學理分析</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <div class="val">185g</div>
+              <div class="lbl">羽量級雲感單雙重量</div>
+            </div>
+            <div class="metric-item">
+              <div class="val">+4.5mm</div>
+              <div class="lbl">亞洲寬楦微弧放鬆空間</div>
+            </div>
+            <div class="metric-item">
+              <div class="val">NT$ 60</div>
+              <div class="lbl">常溫超取首購無負擔</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-img">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80" alt="AYUMI 職人日系極簡減壓休閒鞋">
+            <div class="floating-craft-badge">
+              <div class="title">🌿 30天 MVP 市場驗證中</div>
+              <div class="sub">限量 50 名早鳥享有雙重免運與專屬鞋墊禮</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 課程企劃背景資訊條 -->
+  <section class="section-academic-intro">
+    <div class="container">
+      <div class="academic-info-card">
+        <div class="academic-meta-list">
+          <div class="meta-tag-item">🏫 課程名稱：<strong>創意發想與實踐 (11501)</strong></div>
+          <div class="meta-tag-item">👨‍🏫 授課教師：<strong>邱俊維 博士</strong></div>
+          <div class="meta-tag-item">📍 地點：<strong>萬能科大 G104 多媒體教室</strong></div>
+          <div class="meta-tag-item">💡 專案型態：<strong>100% 個人獨立微型創業 (零主機成本)</strong></div>
+        </div>
+        <div class="repo-pill">
+          <span>🚀 部署環境：<strong>GitHub Pages</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌故事 (Brand Story) -->
+  <section class="story-section" id="brand-story">
+    <div class="container">
+      <div class="story-header">
+        <span class="section-subtitle-en">Brand Philosophy</span>
+        <h2 class="section-title">日系極簡職人精神與足下哲學</h2>
+        <p style="color: var(--text-muted); font-size: 14.5px;">
+          「歩み（Ayumi）」在日文中象徵前進的腳步。我們相信，真正好的鞋子不應靠誇張的裝飾譁眾取寵，而是回歸身體本質，讓雙腳在漫長的通勤與生活中，找到如踏在細沙上的柔軟自由。
+        </p>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-card">
+          <div class="story-icon">🍃</div>
+          <h3>亞洲寬楦的溫柔包覆</h3>
+          <p>
+            大量亞洲人的前掌寬厚且足弓偏低，長時間穿著歐美窄楦尖頭鞋易導致拇趾外翻與足底筋膜炎。《歩み》精準重塑楦頭微弧曲率，給腳趾舒展伸張的天然空間。
+          </p>
+        </div>
+
+        <div class="story-card">
+          <div class="story-icon">☁️</div>
+          <h3>如履雲端的減壓大底</h3>
+          <p>
+            選用生質低密度 EVA 減震複合材料，將每一步接觸地面的衝擊力均勻吸收轉化。重量僅約傳統膠底鞋的一半，徹底告別下班後小腿腫脹與沈重感。
+          </p>
+        </div>
+
+        <div class="story-card">
+          <div class="story-icon">📦</div>
+          <h3>D2C 常溫超取的微型革命</h3>
+          <p>
+            捨棄實體百貨設櫃的高昂抽成與名牌溢價，直接透過 GitHub Pages 線上型錄與常溫 60 元超取直面消費者，將所有省下的成本投注於高級材料與親民定價。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 學理分析核心專區 (步驟 1 - 步驟 6 完整展示) -->
+  <section class="academic-section" id="academic-theory">
+    <div class="container">
+      <div class="story-header" style="margin-bottom: 32px;">
+        <span class="section-subtitle-en">Academic Framework SOP</span>
+        <h2 class="section-title">行銷企劃 SOP 步驟 1 至 步驟 6 深度學理分析</h2>
+        <p style="color: var(--text-muted); font-size: 14.5px;">
+          嚴謹落實凌政文教授《行銷企劃》經典教材之五階段學理邏輯，從痛點發掘、PESTC 外部審視、內部假想敵防護、SWOT 因果推論到 SMART 與 STP/4P 全貌。
+        </p>
+      </div>
+
+      <!-- 步驟頁籤按鈕切換 -->
+      <div class="step-tabs-nav">
+        <button class="step-tab-btn active" onclick="switchStep(1)">
+          <span class="step-num">1</span>
+          <span>發掘痛點與動機</span>
+        </button>
+        <button class="step-tab-btn" onclick="switchStep(2)">
+          <span class="step-num">2</span>
+          <span>PESTC 總體分析</span>
+        </button>
+        <button class="step-tab-btn" onclick="switchStep(3)">
+          <span class="step-num">3</span>
+          <span>內部條件與假想敵</span>
+        </button>
+        <button class="step-tab-btn" onclick="switchStep(4)">
+          <span class="step-num">4</span>
+          <span>SWOT 因果矩陣</span>
+        </button>
+        <button class="step-tab-btn" onclick="switchStep(5)">
+          <span class="step-num">5</span>
+          <span>SMART 與三超思維</span>
+        </button>
+        <button class="step-tab-btn" onclick="switchStep(6)">
+          <span class="step-num">6</span>
+          <span>STP 定位與 4P 方案</span>
+        </button>
+      </div>
+
+      <!-- 步驟 1 內容 -->
+      <div class="step-content-pane active" id="step-pane-1">
+        <div class="step-card-main">
+          <div class="step-card-header">
+            <div class="step-card-title">
+              <h3>步驟 1：發掘痛點與創業動機</h3>
+              <p>從「市售鞋版型困境」、「實體通路溢價門檻」與「極簡生活美學」三大構面提煉切入緣起。</p>
+            </div>
+            <span class="step-badge">階段 1：啟動與分析</span>
+          </div>
+
+          <div class="pain-points-grid">
+            <div class="pain-card">
+              <div class="idx">01</div>
+              <h4>歐美窄版型擠腳與足下健康危機</h4>
+              <p>
+                市售國際運動品牌多沿用歐美修長窄楦，亞洲人前掌骨架寬厚，長時間穿著通勤導致拇趾外翻、足底筋膜壓迫與水泡頻發，市面欠缺兼顧外觀美感與寬楦人體工學的鞋款。
+              </p>
+            </div>
+
+            <div class="pain-card">
+              <div class="idx">02</div>
+              <h4>實體門市抽成溢價與高庫存負擔</h4>
+              <p>
+                傳統鞋業受制於百貨櫃位 30%~45% 抽成與裝潢租金，售價嚴重灌水；微型創業者若貿然開店必受沉重庫存拖累。本案以「D2C 預購型錄 + 60 元常溫超商取貨」實現零店租成本。
+              </p>
+            </div>
+
+            <div class="pain-card">
+              <div class="idx">03</div>
+              <h4>快時尚膠底悶熱且缺乏日系極簡質感</h4>
+              <p>
+                平價快時尚鞋款多使用劣質回收塑料與刺鼻膠水，穿著半天即悶熱潮濕；而高價工匠鞋又厚重不便。市場迫切需要一雙能穿梭在通勤、校園與漫步時光的「侘寂極簡好鞋」。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 步驟 2 內容 -->
+      <div class="step-content-pane" id="step-pane-2">
+        <div class="step-card-main">
+          <div class="step-card-header">
+            <div class="step-card-title">
+              <h3>步驟 2：外部總體環境 PESTC 深度分析</h3>
+              <p>運用政治法律、經濟、社會文化、科技、綠色環保五大構面審視鞋履微型創業機遇。</p>
+            </div>
+            <span class="step-badge">外部趨勢盤點</span>
+          </div>
+
+          <div class="pestc-grid">
+            <div class="pestc-col">
+              <div class="pestc-letter">P</div>
+              <h4>政治與法律</h4>
+              <p>經濟部標準檢驗局嚴格規範鞋類標示法規與塑化劑檢驗。本品牌堅持 100% 無毒環保無異味黏著劑，化法規規範為顧客信任護城河。</p>
+            </div>
+
+            <div class="pestc-col">
+              <div class="pestc-letter">E</div>
+              <h4>經濟環境</h4>
+              <p>通膨壓力下青年族群消費更趨理性，重視「質價比」；千元左右親民定價搭配 60 元超取免排隊體驗，大幅提升下單轉化率。</p>
+            </div>
+
+            <div class="pestc-col">
+              <div class="pestc-letter">S</div>
+              <h4>社會文化</h4>
+              <p>都會「Citywalk」與「慢生活運動」普及，年輕世代偏愛舒適鬆弛感穿搭，日系極簡無印風格深受大學生與白領族群青睞。</p>
+            </div>
+
+            <div class="pestc-col">
+              <div class="pestc-letter">T</div>
+              <h4>科技創新</h4>
+              <p>超輕量生質 EVA 發泡大底與一體成型飛織技術成熟，小批量打樣與柔性製造門檻顯著降低，讓微型創業者能敏捷開發生產。</p>
+            </div>
+
+            <div class="pestc-col">
+              <div class="pestc-letter">C</div>
+              <h4>綠色環保</h4>
+              <p>永續減塑意識高漲，選用天然可降解軟木鞋墊與極簡牛皮紙抽屜鞋盒，有效減少過度塑膠包裝，符合減碳消費風潮。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 步驟 3 內容 -->
+      <div class="step-content-pane" id="step-pane-3">
+        <div class="step-card-main">
+          <div class="step-card-header">
+            <div class="step-card-title">
+              <h3>步驟 3：內部資源盤點與假想敵防護</h3>
+              <p>評估創辦人個人資源限制，精準辨認市場假想敵，構築不對稱競爭之品牌護城河。</p>
+            </div>
+            <span class="step-badge">競爭護城河建構</span>
+          </div>
+
+          <div class="resource-grid">
+            <div class="resource-box">
+              <h4>🔍 創辦人內部資源評估</h4>
+              <ul>
+                <li><strong>優勢 (Strengths)：</strong>決策極致靈活、精通 AI 輔助行銷與 GitHub Pages 零伺服器靜態架站技術；完全無實體門市租金與人事包袱。</li>
+                <li><strong>劣勢 (Weaknesses)：</strong>啟動資金僅 3~5 萬元、一人獨立作業、初期採購無法具備大型連鎖品牌的開模議價優勢。</li>
+              </ul>
+            </div>
+
+            <div class="resource-box">
+              <h4>🛡️ 假想敵精準辨認與定位防護</h4>
+              <ul>
+                <li><strong>假想敵對象：</strong>大型量販快時尚合成膠底鞋（低價拼裝、透氣極差、楦頭過窄）與進口名牌過度溢價鞋款。</li>
+                <li><strong>我方防護之道：</strong>絕不落入低價價格戰陷阱，戰場移至「真實亞洲足型健康數據」與「無負擔赤足步態感」；採小批量預售限量釋出，以極致安心構築護城河。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 步驟 4 內容 -->
+      <div class="step-content-pane" id="step-pane-4">
+        <div class="step-card-main">
+          <div class="step-card-header">
+            <div class="step-card-title">
+              <h3>步驟 4：SWOT 因果推論四象限四部曲綜合矩陣</h3>
+              <p>嚴格按照 SO、WO、ST、WT 兩兩交叉碰撞因果行動推論，非單純條列事實。</p>
+            </div>
+            <span class="step-badge">四象限策略推論</span>
+          </div>
+
+          <div class="swot-matrix">
+            <div class="swot-cell so">
+              <div class="swot-header">
+                <span class="swot-title">SO 積極開拓策略</span>
+                <span class="swot-type">優勢 × 機會</span>
+              </div>
+              <p>
+                發揮「亞洲加寬人體工學」與「常溫超取免店租」的成本結構優勢，搭乘都會 Citywalk 與日系侘寂風穿搭熱潮，透過社群發起「#一日萬步無痛挑戰」，迅速打入都會年輕學生與上班族社群。
+              </p>
+            </div>
+
+            <div class="swot-cell wo">
+              <div class="swot-header">
+                <span class="swot-title">WO 借力補強策略</span>
+                <span class="swot-type">劣勢 × 機會</span>
+              </div>
+              <p>
+                針對初期資金有限與無法大量囤貨之劣勢，全面採用「線上預購意向登記（Pre-order）」模式，精準掌握鞋碼分布；將「小產能」反轉為「每批限量手工慢造、不撞鞋」的稀缺溢價。
+              </p>
+            </div>
+
+            <div class="swot-cell st">
+              <div class="swot-header">
+                <span class="swot-title">ST 防禦轉化策略</span>
+                <span class="swot-type">優勢 × 威脅</span>
+              </div>
+              <p>
+                面對同業低價仿冒與快時尚巨頭的價格傾銷，主動公開材料檢驗報告、鞋底耐磨減震系數及足弓支撐曲線；以「資訊全透明化」化競爭威脅為專業信任防線。
+              </p>
+            </div>
+
+            <div class="swot-cell wt">
+              <div class="swot-header">
+                <span class="swot-title">WT 避險聚焦策略</span>
+                <span class="swot-type">劣勢 × 威脅</span>
+              </div>
+              <p>
+                初期嚴格管控款式數量，不盲目開發過多冷門鞋色，全心聚焦於「男女通用黑、白、米杏」三大經典明星單品，維持資金最高周轉率並避免死庫存積壓。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 步驟 5 內容 -->
+      <div class="step-content-pane" id="step-pane-5">
+        <div class="step-card-main">
+          <div class="step-card-header">
+            <div class="step-card-title">
+              <h3>步驟 5：SMART 企劃目標與三超前瞻思維</h3>
+              <p>設定 30 天內可量化驗證之期中 MVP 指標，並融入三超創新價值觀。</p>
+            </div>
+            <span class="step-badge">階段 2：目標與定位</span>
+          </div>
+
+          <div class="smart-grid">
+            <div class="smart-list">
+              <div class="smart-item">
+                <div class="smart-letter">S</div>
+                <div class="smart-desc"><strong>具體 (Specific)：</strong>在 GitHub Pages 發布官方品牌線上型錄，完整上架針織寬楦、防潑水帆布、復古樂福三款鞋履。</div>
+              </div>
+              <div class="smart-item">
+                <div class="smart-letter">M</div>
+                <div class="smart-desc"><strong>可衡量 (Measurable)：</strong>上線 30 天內累計獲得 500 次有效瀏覽，並收集 50 份線上預購意向與鞋碼反饋。</div>
+              </div>
+              <div class="smart-item">
+                <div class="smart-letter">A</div>
+                <div class="smart-desc"><strong>可達成 (Achievable)：</strong>運用校園人際網絡、穿搭社團（Dcard/Threads）與日系生活圈擴散，指標穩健踏實。</div>
+              </div>
+              <div class="smart-item">
+                <div class="smart-letter">R</div>
+                <div class="smart-desc"><strong>相關性 (Relevant)：</strong>驗證寬楦日系極簡在平價市場的轉換率，為期末深入供應鏈落地量產決策提供客觀數據。</div>
+              </div>
+              <div class="smart-item">
+                <div class="smart-letter">T</div>
+                <div class="smart-desc"><strong>時限 (Time-bound)：</strong>於學期第八週前完成 GitHub 部署與公開連結測試，正式開放意向預約。</div>
+              </div>
+            </div>
+
+            <div class="sanchao-card">
+              <h4>🚀 三超前瞻思維</h4>
+              <div class="sanchao-item">
+                <div class="s-name">1. 超前意識</div>
+                <div class="s-txt">在零庫存的前提下，搶先以 GitHub 靜態原型驗證消費者對楦頭與價格的真實意願，掌握第一手鞋碼大數據。</div>
+              </div>
+              <div class="sanchao-item">
+                <div class="s-name">2. 超越常規</div>
+                <div class="s-txt">打破傳統鞋類不可更動架構，隨鞋標配「高足弓/扁平足」可抽換雙密度足弓支撐片，一雙鞋適配多元腳型。</div>
+              </div>
+              <div class="sanchao-item">
+                <div class="s-name">3. 超越期望</div>
+                <div class="s-txt">隨鞋附贈日本檜木天然除臭木片香囊與「足部 3 分鐘穴位放鬆指引小卡」，傳遞有溫度的職人儀式感。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 步驟 6 內容 -->
+      <div class="step-content-pane" id="step-pane-6">
+        <div class="step-card-main">
+          <div class="step-card-header">
+            <div class="step-card-title">
+              <h3>步驟 6：STP 市場定位與 4P 行銷組合</h3>
+              <p>確立品牌價值主張與產品、價格、通路、推廣四大組合方案。</p>
+            </div>
+            <span class="step-badge">階段 3：方案設計與終點</span>
+          </div>
+
+          <div class="marketing-mix-grid">
+            <div class="mix-box">
+              <h4>🎯 STP 核心定位主張</h4>
+              <p><strong>市場區隔 (S)：</strong>依「行走時長」與「美學風格」區隔，鎖定每日步行超過 6,000 步且注重穿搭質感的族群。</p>
+              <p><strong>目標市場 (T)：</strong>18~35 歲都會學生、久站零售族、通勤白領及極簡主義愛好者。</p>
+              <p><strong>品牌定位宣言 (P)：</strong>「歩み AYUMI —— 每一步，都回到最放鬆的自己。」專注於亞洲寬楦與日系減壓美學的微型鞋履獨立品牌。</p>
+            </div>
+
+            <div class="mix-box">
+              <h4>👞 產品 (Product) 規格</h4>
+              <ul>
+                <li><strong>明星單品 A：</strong>【雲感漫步】日系透氣針織寬楦休閒鞋（185g、微弧寬楦）</li>
+                <li><strong>明星單品 B：</strong>【雨日無憂】防潑水職人帆布鞋（奈米荷葉防潑、抓地止滑）</li>
+                <li><strong>風格選品 C：</strong>【侘寂微旅】可踩後跟復古軟皮樂福鞋（一秒穿脫、免綁鞋帶）</li>
+              </ul>
+            </div>
+
+            <div class="mix-box">
+              <h4>💰 價格 (Price) 策略</h4>
+              <p><strong>極致質價比：</strong>單雙售價落於 NT$ 1,180 ~ 1,480。早鳥預購意向享專屬特惠：</p>
+              <ul>
+                <li>單雙享 9 折早鳥價並獲贈天然除臭香囊</li>
+                <li>任選兩雙折 NT$ 300，再享全台常溫超取免運費</li>
+              </ul>
+            </div>
+
+            <div class="mix-box">
+              <h4>🚚 通路 (Place) & 📣 推廣 (Promotion)</h4>
+              <p><strong>通路：</strong>個人 GitHub Pages 品牌入口，串接常溫超取（運費僅需 60 元），免實體抽成。</p>
+              <p><strong>推廣：</strong>發起「#穿上歩み去漫步」IG 穿搭打卡，邀請校園穿搭達人無痛試穿，引發自發擴散。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 三款明星商品卡片專區 (Products Section) -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="story-header">
+        <span class="section-subtitle-en">Collection Lineup</span>
+        <h2 class="section-title">三款明星履品 · 設計與機能的平衡</h2>
+        <p style="color: var(--text-muted); font-size: 14.5px;">
+          針對不同生活日常場景量身構思，每雙皆融入亞洲微弧寬楦與日系純色調。
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- 商品 1 -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-badge">人氣首選</span>
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=700&q=80" alt="雲感漫步透氣針織休閒鞋">
+          </div>
+          <div class="product-body">
+            <div class="product-tags">
+              <span class="ptag">亞洲寬楦 3E</span>
+              <span class="ptag">僅 185g</span>
+              <span class="ptag">高透氣飛織</span>
+            </div>
+            <h3 class="product-title">【雲感漫步】日系透氣針織寬楦休閒鞋</h3>
+            <p class="product-desc">
+              一體成型無縫飛織鞋面，如同第二層肌膚般貼合。前端微弧加寬 4.5mm，給腳趾前所未有的舒展空間，是日常通勤萬步的首選。
+            </p>
+            <div class="product-specs">
+              <div><span>大底材質</span><span class="s-val">生質輕量 EVA 發泡</span></div>
+              <div><span>尺碼範圍</span><span class="s-val">EU 36 - 45（男女皆宜）</span></div>
+              <div><span>常態配色</span><span class="s-val">侘寂米 / 燕麥灰 / 墨黑</span></div>
+            </div>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">早鳥預購價</span>
+                <span class="price-amt">NT$ 1,280</span>
+              </div>
+              <button class="btn-preorder-card" onclick="selectAndScrollToPreorder('【雲感漫步】日系透氣針織寬楦休閒鞋')">登記意向</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 商品 2 -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-badge">晴雨兩用</span>
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=700&q=80" alt="雨日無憂防潑水職人帆布鞋">
+          </div>
+          <div class="product-body">
+            <div class="product-tags">
+              <span class="ptag">奈米荷葉防潑</span>
+              <span class="ptag">雙重防滑底</span>
+              <span class="ptag">天然純棉</span>
+            </div>
+            <h3 class="product-title">【雨日無憂】防潑水職人日系帆布鞋</h3>
+            <p class="product-desc">
+              採用高密度 16 安重磅純棉帆布，結合無氟荷葉防潑水技術，雨滴輕彈即落。搭配波紋輪胎橡膠大底，潮濕地面穩固不打滑。
+            </p>
+            <div class="product-specs">
+              <div><span>大底材質</span><span class="s-val">天然生膠耐磨防滑底</span></div>
+              <div><span>尺碼範圍</span><span class="s-val">EU 36 - 44</span></div>
+              <div><span>常態配色</span><span class="s-val">日系原白 / 抹茶綠 / 炭灰</span></div>
+            </div>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">早鳥預購價</span>
+                <span class="price-amt">NT$ 1,180</span>
+              </div>
+              <button class="btn-preorder-card" onclick="selectAndScrollToPreorder('【雨日無憂】防潑水職人日系帆布鞋')">登記意向</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 商品 3 -->
+        <div class="product-card">
+          <div class="product-thumb">
+            <span class="product-badge">一秒穿脫</span>
+            <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=700&q=80" alt="侘寂微旅可踩後跟復古軟皮樂福鞋">
+          </div>
+          <div class="product-body">
+            <div class="product-tags">
+              <span class="ptag">可踩後跟兩穿</span>
+              <span class="ptag">植鞣皮感</span>
+              <span class="ptag">懶人一秒蹬</span>
+            </div>
+            <h3 class="product-title">【侘寂微旅】可踩後跟復古軟皮樂福鞋</h3>
+            <p class="product-desc">
+              獨特折疊後跟剪裁，正常穿是優雅俐落的學院樂福鞋，踩下後跟即刻化身隨性穆勒休閒拖鞋。細膩柔軟觸感，上班出遊皆得體。
+            </p>
+            <div class="product-specs">
+              <div><span>皮質面料</span><span class="s-val">極軟水洗植鞣合成微纖皮</span></div>
+              <div><span>尺碼範圍</span><span class="s-val">EU 35 - 43</span></div>
+              <div><span>常態配色</span><span class="s-val">琥珀焦糖 / 象牙白 / 曜石黑</span></div>
+            </div>
+            <div class="product-footer">
+              <div class="price-wrap">
+                <span class="price-label">早鳥預購價</span>
+                <span class="price-amt">NT$ 1,480</span>
+              </div>
+              <button class="btn-preorder-card" onclick="selectAndScrollToPreorder('【侘寂微旅】可踩後跟復古軟皮樂福鞋')">登記意向</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 優惠組企劃宣傳卡 -->
+      <div class="bundle-banner">
+        <div class="bundle-info">
+          <h4>🎁 期中 MVP 早鳥預約特惠方案</h4>
+          <p>凡於期中進度登記意向者，不需預先付款！商品正式開模產出後，享「任選 2 雙折抵 NT$ 300」與「超商常溫取貨 0 元免運」優先權。</p>
+        </div>
+        <button class="btn-primary" onclick="document.getElementById('preorder').scrollIntoView({behavior:'smooth'})">
+          立即前往登記預購意向
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 線上預購意向登記表單區塊 (Pre-order Intention Form) -->
+  <section class="preorder-section" id="preorder">
+    <div class="container">
+      <div class="preorder-wrap">
+        <div class="form-header">
+          <span class="section-subtitle-en">MVP Verification</span>
+          <h2>線上預購意向登記表單</h2>
+          <p>
+            此為期中 MVP 需求驗證專區（無需即時付費）。您的每一筆意向登記，都是協助我們決定首批供應鏈生產尺碼與配色的關鍵依據！
+          </p>
+        </div>
+
+        <!-- 30天指標進度條 (SMART 目標展示) -->
+        <div class="progress-bar-wrap">
+          <div class="progress-info">
+            期中意向收集進度：<strong id="counter-display">38</strong> / 50 份達成
+          </div>
+          <div class="progress-bar-outer">
+            <div class="progress-bar-inner" id="progress-bar" style="width: 76%;"></div>
+          </div>
+          <span style="font-size: 12px; color: var(--text-muted);">已達成 76%</span>
+        </div>
+
+        <form id="preorder-form" onsubmit="handlePreorderSubmit(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="user-name">您的稱呼 / 姓名 <span class="req">*</span></label>
+              <input type="text" id="user-name" class="form-control" placeholder="例：陳同學 / 林小姐" required>
+            </div>
+
+            <div class="form-group">
+              <label for="user-phone">聯絡電話 / 手機 <span class="req">*</span></label>
+              <input type="tel" id="user-phone" class="form-control" placeholder="例：0912-345-678" required>
+            </div>
+
+            <div class="form-group">
+              <label for="user-email">電子信箱 Email <span class="req">*</span></label>
+              <input type="email" id="user-email" class="form-control" placeholder="例：student@vnu.edu.tw" required>
+            </div>
+
+            <div class="form-group">
+              <label for="user-size">您的日常球鞋尺碼 (EU) <span class="req">*</span></label>
+              <select id="user-size" class="form-control" required>
+                <option value="">請選擇鞋碼</option>
+                <option value="36">EU 36 (23.0 cm)</option>
+                <option value="37">EU 37 (23.5 cm)</option>
+                <option value="38">EU 38 (24.0 cm)</option>
+                <option value="39">EU 39 (24.5 cm)</option>
+                <option value="40">EU 40 (25.0 cm)</option>
+                <option value="41">EU 41 (25.5 cm)</option>
+                <option value="42">EU 42 (26.0 cm)</option>
+                <option value="43">EU 43 (26.5 cm)</option>
+                <option value="44">EU 44 (27.0 cm)</option>
+                <option value="45">EU 45 (27.5 cm)</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label>心儀想試穿預購的鞋履款式 <span class="req">*</span></label>
+              <div class="shoes-radio-group">
+                <div class="shoes-radio-card selected" onclick="selectRadioShoe(this, '雲感漫步針織鞋')">
+                  <div class="r-title">【雲感漫步】針織鞋</div>
+                  <div class="r-price">早鳥價 NT$ 1,280</div>
+                </div>
+                <div class="shoes-radio-card" onclick="selectRadioShoe(this, '雨日無憂帆布鞋')">
+                  <div class="r-title">【雨日無憂】帆布鞋</div>
+                  <div class="r-price">早鳥價 NT$ 1,180</div>
+                </div>
+                <div class="shoes-radio-card" onclick="selectRadioShoe(this, '侘寂微旅樂福鞋')">
+                  <div class="r-title">【侘寂微旅】樂福鞋</div>
+                  <div class="r-price">早鳥價 NT$ 1,480</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="user-store">預計方便取件的超商門市（選填）</label>
+              <input type="text" id="user-store" class="form-control" placeholder="例：7-ELEVEN 萬能門市">
+            </div>
+
+            <div class="form-group">
+              <label for="user-foot-type">您的腳型特徵（多選參考）</label>
+              <select id="user-foot-type" class="form-control">
+                <option value="正常偏寬">正常偏寬（常穿鞋側邊擠腳）</option>
+                <option value="高足弓">高足弓（足心容易懸空痠痛）</option>
+                <option value="扁平足">扁平足（久站足底容易疲乏）</option>
+                <option value="標準腳型">標準腳型（希望極致輕量）</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="user-comment">給創辦人的試穿期待或建議</label>
+              <textarea id="user-comment" class="form-control" rows="3" placeholder="歡迎告訴我們您對這雙鞋的期待，例如：希望能多出抹茶綠配色、希望上班穿不咬腳..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit-btn">確認提交預購意向（享優先試穿名額）</button>
+          <div class="form-guarantee">🔒 本意向登記由 Google Antigravity 企劃原型支持，資料僅作學術期中驗證與試穿通知，不另作商業轉賣。</div>
+        </form>
+
+        <div class="success-toast" id="success-toast">
+          <strong>🎉 登記成功！感謝您對《歩み AYUMI LAB》微型創業專案的支持！</strong><br>
+          系統已紀錄您的意向資料。意向編號：<span id="order-id" style="font-family: monospace; font-weight: bold;">AYUMI-2026-8812</span>。<br>
+          我們將在樣品鞋出爐第一時間，以 Email 與簡訊傳送專屬「超取 0 元免運折扣代碼」給您！
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Pages 雲端部署指引區塊 (SOP 手冊 1.1~1.2 對應) -->
+  <section class="deployment-guide-section" id="deployment">
+    <div class="container">
+      <div class="deploy-box">
+        <div class="story-header" style="text-align: left; margin-bottom: 20px;">
+          <span class="section-subtitle-en">GitHub Pages Deployment Guide</span>
+          <h2 class="section-title">期中報告成果：GitHub Pages 部署與提交指引</h2>
+          <p style="color: var(--text-muted); font-size: 14px;">
+            依據邱俊維博士操作手冊步驟，本單一檔案（<code>index.html</code>）完全無外部伺服器依賴，可直接上傳發布取得公開展示網址。
+          </p>
+        </div>
+
+        <div class="deploy-steps-list">
+          <div class="d-step">
+            <div class="d-step-num">1</div>
+            <h4>建立專案 Repo</h4>
+            <p>登入 GitHub，右上角點「+」➔「New repository」，取名為 <code>ayumi-shoes</code>，勾選 <strong>Public</strong> 與 <strong>Add a README</strong>，按建立。</p>
+          </div>
+
+          <div class="d-step">
+            <div class="d-step-num">2</div>
+            <h4>上傳 index.html</h4>
+            <p>在專案頁面點擊「Add file」➔「Upload files」，將本單一檔案 <code>index.html</code> 拖曳至瀏覽器視窗中，點擊綠色「Commit changes」。</p>
+          </div>
+
+          <div class="d-step">
+            <div class="d-step-num">3</div>
+            <h4>啟用 GitHub Pages</h4>
+            <p>進入儲存庫頁面上方「Settings」➔ 左側點「Pages」，在 Branch 下將 <code>None</code> 改為 <code>main</code>，點擊右側「Save」。</p>
+          </div>
+
+          <div class="d-step">
+            <div class="d-step-num">4</div>
+            <h4>取得成果公開網址</h4>
+            <p>等待 1~2 分鐘重新整理，上方出現 <code>https://[帳號].github.io/[Repo名稱]/</code>，此網址即為期中作業提交之公開成果網址！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 (Footer) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>歩み AYUMI LAB</h4>
+          <p style="line-height: 1.8; margin-bottom: 14px;">
+            亞洲寬楦 · 日系極簡減壓鞋履微型創業專案。<br>
+            以無負擔的步態感，走進日常裡的每一刻平靜。
+          </p>
+          <div style="font-size: 12.5px; color: var(--text-light);">
+            萬能科技大學 11501《創意發想與實踐》期中報告成果專案
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>企劃學理索引</h5>
+          <ul class="footer-links">
+            <li><a href="#academic-theory" onclick="switchStep(1)">步驟 1：痛點發掘與動機</a></li>
+            <li><a href="#academic-theory" onclick="switchStep(2)">步驟 2：PESTC 總體環境</a></li>
+            <li><a href="#academic-theory" onclick="switchStep(3)">步驟 3：內部條件與假想敵</a></li>
+            <li><a href="#academic-theory" onclick="switchStep(4)">步驟 4：SWOT 因果推論</a></li>
+            <li><a href="#academic-theory" onclick="switchStep(5)">步驟 5：SMART 與三超思維</a></li>
+            <li><a href="#academic-theory" onclick="switchStep(6)">步驟 6：STP 定位與 4P 方案</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>技術與部署</h5>
+          <ul class="footer-links">
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub 官方託管</a></li>
+            <li><a href="https://pages.github.com" target="_blank" rel="noopener">GitHub Pages 免費靜態發布</a></li>
+            <li><a href="https://antigravity.google" target="_blank" rel="noopener">Google Antigravity 官方網站</a></li>
+            <li><a href="#deployment">期中報告提交檢核表</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 歩み AYUMI LAB. All rights reserved. 萬能科技大學《創意發想與實踐》期中微型創業專案.</div>
+        <div>指導教授：邱俊維 博士 ｜ 數位原型平台：Google Antigravity</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 互動腳本 (JavaScript) -->
+  <script>
+    // 1. 動態切換日系視覺風格
+    function setTheme(themeName) {
+      document.documentElement.setAttribute('data-theme', themeName);
+      
+      // 更新按鈕樣式
+      const buttons = document.querySelectorAll('.theme-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent.includes(
+          themeName === 'cream' ? '侘寂白' :
+          themeName === 'dark' ? '墨黑' :
+          themeName === 'matcha' ? '抹茶' : '藍染'
+        )) {
+          btn.classList.add('active');
+        }
+      });
+
+      // 記憶使用者選擇之主題
+      try {
+        localStorage.setItem('ayumi_theme', themeName);
+      } catch(e) {}
+    }
+
+    // 初始化讀取已儲存主題
+    (function initTheme() {
+      try {
+        const savedTheme = localStorage.getItem('ayumi_theme');
+        if (savedTheme) {
+          setTheme(savedTheme);
+        }
+      } catch(e) {}
+    })();
+
+    // 2. 切換步驟 1 至 步驟 6 頁籤
+    function switchStep(stepNumber) {
+      const allBtns = document.querySelectorAll('.step-tab-btn');
+      const allPanes = document.querySelectorAll('.step-content-pane');
+
+      allBtns.forEach((btn, index) => {
+        if (index === stepNumber - 1) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      allPanes.forEach((pane, index) => {
+        if (index === stepNumber - 1) {
+          pane.classList.add('active');
+        } else {
+          pane.classList.remove('active');
+        }
+      });
+    }
+
+    // 3. 點擊商品卡片「登記意向」自動滾動並預先勾選
+    function selectAndScrollToPreorder(shoeName) {
+      document.getElementById('preorder').scrollIntoView({ behavior: 'smooth' });
+      
+      const cards = document.querySelectorAll('.shoes-radio-card');
+      cards.forEach(card => {
+        card.classList.remove('selected');
+        if (shoeName.includes('針織') && card.textContent.includes('針織')) {
+          card.classList.add('selected');
+        } else if (shoeName.includes('帆布') && card.textContent.includes('帆布')) {
+          card.classList.add('selected');
+        } else if (shoeName.includes('樂福') && card.textContent.includes('樂福')) {
+          card.classList.add('selected');
+        }
+      });
+    }
+
+    // 4. 單選鞋款卡片高亮切換
+    let selectedShoe = '雲感漫步針織鞋';
+    function selectRadioShoe(element, name) {
+      const cards = document.querySelectorAll('.shoes-radio-card');
+      cards.forEach(c => c.classList.remove('selected'));
+      element.classList.add('selected');
+      selectedShoe = name;
+    }
+
+    // 5. 處理表單提交
+    let currentTally = 38;
+    function handlePreorderSubmit(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('user-name').value.trim();
+      const phone = document.getElementById('user-phone').value.trim();
+      const email = document.getElementById('user-email').value.trim();
+      const size = document.getElementById('user-size').value;
+      const store = document.getElementById('user-store').value.trim();
+      const comment = document.getElementById('user-comment').value.trim();
+
+      if (!name || !phone || !email || !size) {
+        alert('請填寫完整必填欄位（姓名、電話、Email 與尺碼）！');
+        return;
+      }
+
+      // 產生專屬意向序號
+      const randomCode = Math.floor(1000 + Math.random() * 9000);
+      const orderId = `AYUMI-2026-${randomCode}`;
+      document.getElementById('order-id').innerText = orderId;
+
+      // 累加計數器
+      currentTally += 1;
+      document.getElementById('counter-display').innerText = currentTally;
+      const pct = Math.min(100, Math.round((currentTally / 50) * 100));
+      document.getElementById('progress-bar').style.width = pct + '%';
+
+      // 顯示成功訊息並重置表單
+      const toast = document.getElementById('success-toast');
+      toast.style.display = 'block';
+      toast.scrollIntoView({ behavior: 'smooth' });
+
+      // 本地儲存紀錄
+      try {
+        const records = JSON.parse(localStorage.getItem('ayumi_preorders') || '[]');
+        records.push({
+          id: orderId,
+          name, phone, email, size, shoe: selectedShoe, store, comment, time: new Date().toISOString()
+        });
+        localStorage.setItem('ayumi_preorders', JSON.stringify(records));
+      } catch(err) {}
+
+      document.getElementById('preorder-form').reset();
+    }
+  </script>
+</body>
+</html>
